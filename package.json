@@ -1,0 +1,31 @@
+{
+  "name": "pdf-speech-highlighter-poc",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "test": "vitest run",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "validate": "npm run format:check && npm run check && npm test && npm run build"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-auto": "7.0.1",
+    "@sveltejs/kit": "2.70.2",
+    "@sveltejs/vite-plugin-svelte": "7.2.0",
+    "prettier": "3.9.6",
+    "prettier-plugin-svelte": "4.1.1",
+    "svelte": "5.56.8",
+    "svelte-check": "4.7.4",
+    "typescript": "6.0.3",
+    "vite": "8.2.0",
+    "vitest": "4.1.10"
+  },
+  "dependencies": {
+    "pdfjs-dist": "6.2.108"
+  }
+}
